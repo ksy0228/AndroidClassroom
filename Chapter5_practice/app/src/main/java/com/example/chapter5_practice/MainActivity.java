@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         image = findViewById(R.id.imageView);
 
         //3. 버튼 클릭 이벤트 처리 1
-        /*btn_visible.setOnClickListener(new View.OnClickListener() {
+        btn_visible.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 image.setVisibility(View.VISIBLE);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 image.setVisibility(View.INVISIBLE);
             }
-        });*/
+        });
 
         //4. 버튼 클릭 이벤트 처리 2
         /*View.OnClickListener listener = new View.OnClickListener() {
