@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Chronometer timer;
     Button startBtn, stopBtn, resetBtn;
+    long timeWhenStopped;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                timer.setBase(SystemClock.elapsedRealtime()+timeWhenStopped);
                 timer.start();
             }
         });
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         stopBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                timeWhenStopped = timer.getBase() -SystemClock.elapsedRealtime();
                 timer.stop();
             }
         });
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 timer.setBase(SystemClock.elapsedRealtime());
+                timer.stop();
+                timeWhenStopped = 0;
             }
         });
     }
