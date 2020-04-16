@@ -1,0 +1,3 @@
+rootProject.name='Chapter6_practice'
+include ':app'
+include ':example6-1_textclock'
