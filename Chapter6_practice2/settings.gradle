@@ -1,2 +1,3 @@
 rootProject.name='Chapter6_practice2'
 include ':app'
+include ':exercise6-2_chronometer'
