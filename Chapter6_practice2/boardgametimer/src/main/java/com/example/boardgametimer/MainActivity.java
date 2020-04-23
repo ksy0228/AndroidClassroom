@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     CountDownTimer countDownTimer;
     TextToSpeech textToSpeech;
 
-    long fullTime = 40, halfTime = fullTime / 2;
+    long fullTime = 40;
+    long halfTime = fullTime / 2;
     boolean isPaused = false; //pause / restart 버튼 상태
     //endregion
 
