@@ -17,30 +17,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        timer = findViewById(R.id.timer);
-        startBtn = findViewById(R.id.startBtn);
-        stopBtn = findViewById(R.id.stopBtn);
-        resetBtn = findViewById(R.id.resetBtn);
-
-        startBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                timer.start();
-            }
-        });
-
-        stopBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                timer.stop();
-            }
-        });
-
-        resetBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                timer.setBase(SystemClock.elapsedRealtime());
-            }
-        });
     }
 }
