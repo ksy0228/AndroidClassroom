@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Chronometer
+            android:background="#CCCCCC"
+            android:id="@+id/chronometer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:format="예약에 걸린 시간 %s"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/daySet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="날짜 설정"/>
+        <RadioButton
+            android:id="@+id/timeSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간 설정"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <DatePicker
+                android:datePickerMode="spinner"
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:timePickerMode="spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0000년 00월 00일 00시 00분 예약됨"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:textSize="20sp"/>
+</LinearLayout>
