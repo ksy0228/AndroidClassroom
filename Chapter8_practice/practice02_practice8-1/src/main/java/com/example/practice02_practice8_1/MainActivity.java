@@ -37,15 +37,13 @@ public class MainActivity extends AppCompatActivity {
         int month = calendar.get(calendar.MONTH);
         int day = calendar.get(calendar.DAY_OF_MONTH);
 
+        // 앱이 처음 실행될 때 일기가 있으면 가져와서 출력
+        readAndWriteDiary(year, month, day);
+
         datePicker.init(year, month, day, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
-                fileName = String.format("%d_%d_%d.txt", year, monthOfYear, dayOfMonth);    // 연_월_일.txt
-                String str = readDiary(fileName);               // 선택된 날짜 이름을 가진 파읠의 내용을 읽어와서 저장
-                editText.setText(str);                          // 읽어온 텍스트를 editText 에 표시
-                btnWriter.setEnabled(true);                     // 버튼 활성화
-
-
+                readAndWriteDiary(year, monthOfYear, dayOfMonth);
             }
         });
 
@@ -65,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    private void readAndWriteDiary(int year, int month, int day) {
+        fileName = String.format("%d_%d_%d.txt", year, month+1, day);    // 연_월_일.txt
+        String str = readDiary(fileName);               // 선택된 날짜 이름을 가진 파읠의 내용을 읽어와서 저장
+        editText.setText(str);                          // 읽어온 텍스트를 editText 에 표시
+        btnWriter.setEnabled(true);                     // 버튼 활성화
+
+    }
+
     private String readDiary(String fileName){
         String diaryStr = null;
         FileInputStream inputStream;
