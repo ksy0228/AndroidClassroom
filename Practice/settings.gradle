@@ -1,0 +1,6 @@
+rootProject.name='Practice'
+include ':app'
+include ':intent'
+include ':practice2'
+include ':menu'
+include ':file'
