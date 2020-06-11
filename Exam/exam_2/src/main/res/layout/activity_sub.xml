@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="40sp"
+        android:gravity="center"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화 걸기"/>
+        <RadioButton
+            android:id="@+id/radioCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="카메라 실행시키기"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인액티비티로 돌아가기(인탠트 실행)"/>
+
+</LinearLayout>
