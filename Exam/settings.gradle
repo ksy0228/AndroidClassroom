@@ -1,0 +1,4 @@
+rootProject.name='Exam'
+include ':app'
+include ':exam_calculator'
+include ':exam_2'
