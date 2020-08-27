@@ -10,14 +10,14 @@
   example6-4_timepickerdatepicker   
   example12_progressbar   
   example13_scrollview1   
-  example13_scrollview2 
+  example13_scrollview2   
   example6-15_viewflipper 
   fragment01  
   fragment02  
   
 ## Chapter7
-  exercise01_optionmenu 
-  exercise02_optionmenu 
+  exercise01_optionmenu   
+  exercise02_optionmenu   
   exercise03_contextmenu  
   exercise04_toast  
   exercise05_dialog 
