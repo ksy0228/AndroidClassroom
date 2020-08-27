@@ -4,16 +4,16 @@
   visible / invisible
 
 ## Chapter6
-  example6-1_textclock
-  example6-2_chronometer
-  example6-3_countdowntimer
-  example6-4_timepickerdatepicker
-  example12_progressbar
-  example13_scrollview1
-  example13_scrollview2
-  example6-15_viewflipper
-  fragment01
-  fragment02
+  example6-1_textclock  
+  example6-2_chronometer  
+  example6-3_countdowntimer 
+  example6-4_timepickerdatepicker 
+  example12_progressbar 
+  example13_scrollview1 
+  example13_scrollview2 
+  example6-15_viewflipper 
+  fragment01  
+  fragment02  
   
 ## Chapter7
   exercise01_optionmenu
